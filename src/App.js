@@ -5,9 +5,11 @@ import { useState } from "react";
 
 export default function Calculator() {
   const [inputFiled, setInputFiled] = useState([]);
+
+  /*eslint no-eval: "error"*/
   const setResult = () =>
     setInputFiled((prevState) => [eval(prevState.join(""))]);
-  //to set input field
+
   return (
     <section>
       <h1>Calculator App</h1>
