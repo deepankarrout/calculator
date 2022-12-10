@@ -8,8 +8,9 @@ export default function Calculator() {
 
   const setResult = () =>
     setInputFiled((prevState) => {
-      /*eslint no-eval: "error"*/
-      // return [window.eval(prevState.join(""))];
+      /* eslint-disable */
+      return [window.eval(prevState.join(""))];
+      /* eslint-enable */
     });
 
   return (
