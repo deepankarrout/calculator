@@ -6,9 +6,11 @@ import { useState } from "react";
 export default function Calculator() {
   const [inputFiled, setInputFiled] = useState([]);
 
-  /*eslint no-eval: "error"*/
   const setResult = () =>
-    setInputFiled((prevState) => [window.eval(prevState.join(""))]);
+    setInputFiled((prevState) => {
+      /*eslint no-eval: "error"*/
+      return [window.eval(prevState.join(""))];
+    });
 
   return (
     <section>
