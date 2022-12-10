@@ -10,7 +10,7 @@ export default function Calculator() {
   //to set input field
   return (
     <section>
-      <h1>Calculator</h1>
+      <h1>Calculator App</h1>
       <div className="container">
         <input
           value={inputFiled.join("")}
