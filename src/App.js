@@ -9,7 +9,7 @@ export default function Calculator() {
   const setResult = () =>
     setInputFiled((prevState) => {
       /*eslint no-eval: "error"*/
-      return [window.eval(prevState.join(""))];
+      // return [window.eval(prevState.join(""))];
     });
 
   return (
