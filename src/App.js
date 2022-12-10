@@ -8,7 +8,7 @@ export default function Calculator() {
 
   /*eslint no-eval: "error"*/
   const setResult = () =>
-    setInputFiled((prevState) => [eval(prevState.join(""))]);
+    setInputFiled((prevState) => [window.eval(prevState.join(""))]);
 
   return (
     <section>
