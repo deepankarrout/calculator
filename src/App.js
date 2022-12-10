@@ -7,6 +7,7 @@ export default function Calculator() {
   const [inputFiled, setInputFiled] = useState([]);
   const setResult = () =>
     setInputFiled((prevState) => [eval(prevState.join(""))]);
+  //to set input field
   return (
     <section>
       <h1>Calculator</h1>
