@@ -3,7 +3,9 @@ import "./App.css";
 import Buttons from "./componnets/Buttons";
 import { useState } from "react";
 
+//This is Calculator function and we are exporting
 export default function Calculator() {
+  //useState hook we used to create a state and set input field
   const [inputFiled, setInputFiled] = useState([]);
 
   const setResult = () =>
